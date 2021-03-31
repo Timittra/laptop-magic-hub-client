@@ -1,0 +1,21 @@
+.admin{
+    text-align: center;
+    background-color: lavender;
+}
+.manage-products{
+    margin-top: 100px;
+}
+.manage-products h3{
+    margin-bottom: 30px;
+}
+.add-products{
+    margin-top: 50px;
+    background-color: palevioletred;
+    padding: 30px;
+    text-align: center;
+}
+.add-products input{
+    margin: 10px;
+    width: 80%;
+    padding:5px 20px;
+}

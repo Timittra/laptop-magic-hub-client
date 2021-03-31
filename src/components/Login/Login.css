@@ -1,0 +1,17 @@
+.login{
+    text-align: center;
+    background-color: lavender;
+    height: 700px;
+}
+.google-login{
+    background-color:lightyellow;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor:pointer;
+}
+.google-img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
