@@ -16,7 +16,7 @@ const Admin = () => {
 
     useEffect(() =>{
 
-        fetch('http://localhost:5056/laptops')
+        fetch('https://nameless-peak-99458.herokuapp.com/laptops')
         .then(res => res.json())
         .then(data => setLaptops(data));
 
@@ -28,7 +28,7 @@ const Admin = () => {
             price: data.price,
             imageURL: imageURL
         };
-        const url = `http://localhost:5056/addLaptop`;
+        const url = `https://nameless-peak-99458.herokuapp.com/addLaptop`;
 
         fetch(url, {
           method: 'POST', 
@@ -58,7 +58,7 @@ const Admin = () => {
        
     const deleteProduct = id => {
         
-      fetch(`http://localhost:5056/deleteProduct/${id}`,{
+      fetch(`https://nameless-peak-99458.herokuapp.com/deleteProduct/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())

@@ -17,7 +17,7 @@ const CheckOut = () => {
     const handleProceedCheckout = () => {
         const orderDetails = {...loggedInUser, laptopInfo:laptop, orderTime: new Date()};
       
-        fetch('http://localhost:5056/addOrder', {
+        fetch('https://nameless-peak-99458.herokuapp.com/addOrder', {
           method: 'POST',
           headers: {'Content-Type' : 'application/json'},
           body: JSON.stringify(orderDetails)
@@ -32,7 +32,7 @@ const CheckOut = () => {
        }
 
        useEffect( () => {
-        fetch(`http://localhost:5056/laptop/${id}`)
+        fetch(`https://nameless-peak-99458.herokuapp.com/laptop/${id}`)
         .then(res => res.json())
         .then(data => setLaptop(data));
        

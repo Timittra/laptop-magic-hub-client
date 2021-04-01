@@ -20,12 +20,11 @@ const Home = () => {
 
     useEffect(() =>{
 
-        fetch('http://localhost:5056/laptops')
+        fetch('https://nameless-peak-99458.herokuapp.com/laptops')
         .then(res => res.json())
         .then(data => setLaptops(data));
 
     }, []);
-
 
     return (
         <Container maxWidth='lg'>
