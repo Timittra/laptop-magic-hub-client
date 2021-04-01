@@ -15,7 +15,8 @@ const CheckOut = () => {
     let {id} = useParams();
 
     const handleProceedCheckout = () => {
-        const orderDetails = {...loggedInUser, laptopInfo:laptop, orderTime: new Date()};
+       let date = (new Date().toString("dddd, mmmm dS, yyyy, g:i A TT"));
+       const orderDetails = {...loggedInUser, laptopInfo:laptop, orderTime:date};
       
         fetch('https://nameless-peak-99458.herokuapp.com/addOrder', {
           method: 'POST',
