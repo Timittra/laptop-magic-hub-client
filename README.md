@@ -17,6 +17,7 @@ This _react_ project is integrated with _node.js_ to make it medium level _full-
 * Mongodb atlas
 * firebase
 * Fontawesome icons 
+* Spinner 
 
 #### Live site link 
 <https://laptop-magic-hub.web.app/>

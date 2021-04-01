@@ -21,12 +21,12 @@ const Order = () => {
         .then(data =>setOrders(data));
     },[]);
     return (
-        <div style={{textAlign:'center', marginTop:'30px'}}>
+        <div style={{textAlign:'center', marginTop:'30px', color:'darkblue', fontWeight:'500'}}>
             <h3>You have {orders.length} Order(s) {loggedInUser.userName}</h3>
             <p>Your order is confirmed by you email: {loggedInUser.email}</p>
             <p>And your laptop(s): </p>
             {
-                orders.map(order => <li key={order._id}>Laptop: {order.laptopInfo.name}, Price: {order.laptopInfo.price} at {order.orderTime} </li>)
+                orders.map(order => <li key={order._id} style={{color:'gray', fontWeight:'700'}}>Laptop: {order.laptopInfo.name}, Price: {order.laptopInfo.price} at {order.orderTime} </li>)
             }
             <h3 style={{marginTop:'20px', color:'skyblue'}}>Happy Shopping<FontAwesomeIcon icon={ faLaptop} /></h3>
         </div>

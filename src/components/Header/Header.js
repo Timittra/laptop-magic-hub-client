@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className="header-section" style={{ backgroundColor: "#e3f2fd", padding: '20px' }}>
+        <div className="header-section" style={{ backgroundColor: "#e3f2fd", padding: '20px'}}>
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-light">
 

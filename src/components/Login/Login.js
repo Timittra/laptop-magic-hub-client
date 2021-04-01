@@ -42,10 +42,10 @@ const Login = () => {
 
     return (
         <div className='login'>
-            <h2>This is login</h2>
+          <h2 style={{marginBottom:'100px'}}>Welcome</h2>
             <p>
-            <span onClick={handleGoogleSignIn} className='google-login'><img className='google-img' src={`${GoogleImage}`} alt=''/>
-             Continue with Google</span>
+              <span onClick={handleGoogleSignIn} className='google-login'><img className='google-img' src={`${GoogleImage}`} alt=''/>
+              Continue with Google Account</span>
             </p>
         </div>
     );

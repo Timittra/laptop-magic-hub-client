@@ -22,7 +22,7 @@ const Laptop = ({laptop}) => {
                 <Card.Title>{laptop.name}</Card.Title>
                 <Card.Text>${laptop.price}</Card.Text>
                 <Button
-                    variant="light"
+                    variant="info"
                     onClick={() => handleClick(laptop._id)}
                 >Buy Now</Button>
             </Card.Body>

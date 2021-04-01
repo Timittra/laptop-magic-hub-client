@@ -40,11 +40,11 @@ const CheckOut = () => {
 
     return (
             <div style={{marginTop:'30px'}}>
-                <Card className='checkout-card' style={{ width: '20rem', height: '18rem'}}>
+                <Card className='checkout-card' style={{ width: '20rem', height: '18rem',backgroundColor: 'lightcoral', color:'whitesmoke', fontWeight:'500'}}>
                 <Card.Body>
                     <Card.Title>Description: {laptop.name}</Card.Title>
                     <Card.Title>Quantity: 1</Card.Title>
-                    <Card.Text>Price: {laptop.price}</Card.Text>
+                    <Card.Text>Price: ${laptop.price}</Card.Text>
                     <Button
                         variant="light"
                         onClick={handleProceedCheckout}
