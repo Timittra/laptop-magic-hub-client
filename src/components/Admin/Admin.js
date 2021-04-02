@@ -97,13 +97,15 @@ const Admin = () => {
          <div className='manage-products' id='dlt-products'>
           <h3><FontAwesomeIcon style={{padding:'3px'}} icon={ faThLarge } />Manage Products</h3>
          {laptops.map((laptop) => (
-            <Grid xs={12} sm={12} md={12} lg={12} key={laptop._id} item>
+            <div className='container list'>
+              <Grid xs={12} sm={12} md={12} lg={12} key={laptop._id} item>
              <h5>{laptop.name}, Price: {laptop.price}  
                <Button onClick={() => deleteProduct(laptop._id)}>
-               <FontAwesomeIcon icon={ faTrashAlt } />
+               <FontAwesomeIcon style={{color:'red'}} icon={ faTrashAlt } />
                </Button>
                </h5>
             </Grid>
+            </div>
            
           ))}
          </div>
